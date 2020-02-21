@@ -8,7 +8,7 @@ public class BlogPost {
     private String blogId;
     private String authorId;
     private String title;
-    private String description;
+    private String message;
     private Set<String> categories = new HashSet<>();
     private LocalDateTime dateCreated;
     private LocalDateTime dateUpdated;
@@ -37,12 +37,12 @@ public class BlogPost {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getMessage() {
+        return message;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public Set<String> getCategories() {
